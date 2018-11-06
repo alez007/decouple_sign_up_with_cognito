@@ -1,0 +1,29 @@
+<html>
+    <head></head>
+    <body>
+        <form id="registerForm">
+            <input type="email" name="email" placeholder="email" />
+            <input type="password" name="password" placeholder="password" />
+            <input type="submit" value="register" />
+            <br/>
+            <span id="registerResponse"></span>
+        </form>
+        <hr/>
+        <form id="registerConfirmForm">
+            <input type="email" name="email" placeholder="email to validate" />
+            <input type="number" name="confirmCode" placeholder="confirmation code" />
+            <input type="submit" value="validate" />
+            <br/>
+            <span id="registerConfirmResponse"></span>
+        </form>
+        <hr/>
+        <form id="loginForm">
+            <input type="email" name="email" placeholder="email" />
+            <input type="password" name="password" placeholder="password" />
+            <input type="submit" value="login" />
+            <br/>
+            <span id="loginResponse"></span>
+        </form>
+        <script src="bundle.js"></script>
+    </body>
+</html>
