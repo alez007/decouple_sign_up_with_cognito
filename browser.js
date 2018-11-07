@@ -76,6 +76,7 @@ document.getElementById("loginForm").onsubmit = (evt) => {
         Username: email,
         Pool: userPool
     });
+    cognitoUser.setAuthenticationFlowType('USER_PASSWORD_AUTH');
 
     cognitoUser.authenticateUser(new AmazonCognitoIdentity.AuthenticationDetails({
         Username: email,
